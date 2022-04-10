@@ -1,0 +1,32 @@
+using System;
+
+namespace DuplicateFilmConsole
+{
+    class Program
+    {
+        static void Main(string[] args)
+        
+        {
+            string longName = Console.ReadLine();
+            string shortName = "";
+            char letter = ' ';
+            foreach (char x in longName)
+            
+            {
+                if (x == letter)
+                
+                {
+                    continue;
+                }
+                else
+                
+                {
+                    letter = x;
+                    shortName += x;
+                }
+            }
+            
+            Console.Write(shortName);
+                }
+            }
+        }
